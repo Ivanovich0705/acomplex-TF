@@ -10,7 +10,7 @@ from queue import PriorityQueue
 from dijkstra_algorithm import dijkstra
 
 app = Flask(__name__)
-client = MongoClient("mongodb+srv://<usernam>:<password>@cluster0.m6ouyv0.mongodb.net/?retryWrites=true&w=majority")
+client = MongoClient("mongodb+srv://<username>:<password>@cluster0.m6ouyv0.mongodb.net/?retryWrites=true&w=majority")
 db = client.acomplex
 
 nodes = list(db.nodes.find())
